@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/regsiter.css">
+</head>
+<body>
+<div class="header">
+    <div class="head">
+        <div class="left"><a href=""><img src="../images/denglu_03.png" alt=""></a></div>
+        <div class="mid">注册</div>
+        <div class="right"><img src="../images/denglu_05.png" alt=""></div>
+    </div>
+</div>
+
+<div class="user">
+    <p>账号</p>
+    <input type="text" placeholder="请输入用户名，长度2-15个字符">
+</div>
+<div class="user">
+    <p>密码</p>
+    <input type="text" placeholder="请输入登录密码，长度6-20个字符">
+</div>
+<div class="user">
+    <p>确认密码</p>
+    <input type="text" placeholder="请再次输入密码">
+</div>
+<div class="user">
+    <p>邮箱</p>
+    <input type="text" placeholder="用于激活账号和接收返利订单信息">
+</div>
+<div class="user">
+    <p>QQ号</p>
+    <input type="text" placeholder="进官方优质群验证使用">
+</div>
+<div class="user">
+    <p>手机号</p>
+    <input type="text" placeholder="请输入手机号">
+</div>
+<div class="user user1">
+    <p>效验码</p>
+    <input type="text" placeholder="请输入手机效验码">
+    <p class="xym">获取效验码</p>
+</div>
+
+<a href="" class="loginbar">确认注册</a>
+<p class="pass"><span><a href="#">注册即代表您同意</a> <a href="#">一起惠用户服务协议</a></span><span><a href="#">已有账号？</a> <a href="login.html">马上登陆</a></span></p>
+<p class="bottitle">
+    <span></span>使用合作网站账号登录<span></span>
+</p>
+<div class="hezuo">
+    <img src="../images/denglu_10.png" alt="">
+</div>
+<div class="footer">
+    <div class="foot">
+        <ul>
+            <li><a href="../index.html"><img src="../images/denglu_13.png" alt=""><p>首页</p></a></li>
+            <li><a href="#"><img src="../images/denglu_15.png" alt=""><p>商城返利</p></a></li>
+            <li><a href="#"><img src="../images/denglu_17.png" alt=""><p>优惠爆料</p></a></li>
+            <li><a href="#"><img src="../images/denglu_19.png" alt=""><p>超级返利</p></a></li>
+            <li><a href="login.html"><img src="../images/denglu_21.png" alt=""><p>我的</p></a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    (function(win,doc){
+        //浏览器缩放时
+        win.onresize=function(){
+            change();
+        };
+        change();
+        function change(){
+
+            //320  20px
+            //414  20px
+            var oFs=doc.documentElement.clientWidth/(414/20);
+
+            //设置根目录字体大小
+            doc.documentElement.style.fontSize=oFs+'px';
+        }
+    })(window,document);
+</script>
+</body>
+</html>
